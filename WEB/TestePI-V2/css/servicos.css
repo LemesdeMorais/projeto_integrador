@@ -1,0 +1,13 @@
+body{
+    background-color:#757474;
+}
+#dados{
+    border-radius: 6%;
+    background-color: #333;
+    width: 30%;
+    color: white;
+}
+
+#carrossel{
+    height: 15px;
+}

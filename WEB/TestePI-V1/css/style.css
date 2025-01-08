@@ -1,0 +1,17 @@
+body{
+    background: color #757475;
+    display: flex;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* ou fixed, dependendo do comportamento desejado */
+  width: 100%;
+  bottom: 0; }
+
+
+    
+   

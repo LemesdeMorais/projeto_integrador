@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/cliente.css" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuleiro Transportes</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top" style="background-color:#333;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html" style="color: white">Tabuleiro Transportes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" style="background-color: #333;">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;">Tabuleiro Transportes
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: #333;">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h3 style="color: white">Seja bem-vindo</h3>
+                            <br>
+                        <li><a class="dropdown-item" href="dados.html" style="color: white;">Dados Bancarios</a></li>    
+                        <li><a class="dropdown-item" href="home.html" style="color: white;">Sair</a></li>
+                        <li class="nav-item">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Empresa</th>
+                <th scope="col">Carga</th>
+                <th scope="col">Origem</th>
+                <th scope="col">Destino</th>
+                <th scope="col">
+                    <center>
+                        Ações
+                    </center>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Tabuleiro Transportes</td>
+                <td>Cimento</td>
+                <td>Araras</td>
+                <td>Sao Paulo</td>
+                <td>
+                    <!-- Button trigger modal -->
+                    <center>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Detalhes
+                        </button>
+                    </center>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                        Transportes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color: black">
+                                    <center>
+                                        <p>Empresa: Tabuleiro Transportes</p>
+                                        <p>Carga: Cimento</p>
+                                        <p>Destino: São Paulo</p>
+                                        <p>Local da Carga: Araras</p>
+                                    </center>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <tr>
+                    <td>1</td>
+                    <td>Tabuleiro Transportes</td>
+                    <td>Cimento</td>
+                    <td>Araras</td>
+                    <td>Sao Paulo</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <center>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Detalhes
+                            </button>
+                        </center>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                            Transportes</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="color: black">
+                                        <center>
+                                            <p>Empresa: Tabuleiro Transportes</p>
+                                            <p>Carga: Cimento</p>
+                                            <p>Destino: São Paulo</p>
+                                            <p>Local da Carga: Araras</p>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Tabuleiro Transportes</td>
+                        <td>Cimento</td>
+                        <td>Araras</td>
+                        <td>Sao Paulo</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <center>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Detalhes
+                                </button>
+                            </center>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                Transportes</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" style="color: black">
+                                            <center>
+                                                <p>Empresa: Tabuleiro Transportes</p>
+                                                <p>Carga: Cimento</p>
+                                                <p>Destino: São Paulo</p>
+                                                <p>Local da Carga: Araras</p>
+                                            </center>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-primary">Aplicar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Tabuleiro Transportes</td>
+                            <td>Cimento</td>
+                            <td>Araras</td>
+                            <td>Sao Paulo</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <center>
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Detalhes
+                                    </button>
+                                </center>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                    Transportes</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" style="color: black">
+                                                <center>
+                                                    <p>Empresa: Tabuleiro Transportes</p>
+                                                    <p>Carga: Cimento</p>
+                                                    <p>Destino: São Paulo</p>
+                                                    <p>Local da Carga: Araras</p>
+                                                </center>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn btn-primary">Aplicar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+
+                            <tr>
+                <td>1</td>
+                <td>Tabuleiro Transportes</td>
+                <td>Cimento</td>
+                <td>Araras</td>
+                <td>Sao Paulo</td>
+                <td>
+                    <!-- Button trigger modal -->
+                    <center>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Detalhes
+                        </button>
+                    </center>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                        Transportes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color: black">
+                                    <center>
+                                        <p>Empresa: Tabuleiro Transportes</p>
+                                        <p>Carga: Cimento</p>
+                                        <p>Destino: São Paulo</p>
+                                        <p>Local da Carga: Araras</p>
+                                    </center>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <tr>
+                    <td>1</td>
+                    <td>Tabuleiro Transportes</td>
+                    <td>Cimento</td>
+                    <td>Araras</td>
+                    <td>Sao Paulo</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <center>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Detalhes
+                            </button>
+                        </center>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                            Transportes</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="color: black">
+                                        <center>
+                                            <p>Empresa: Tabuleiro Transportes</p>
+                                            <p>Carga: Cimento</p>
+                                            <p>Destino: São Paulo</p>
+                                            <p>Local da Carga: Araras</p>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <tr>
+                        <td>1</td>
+                        <td>Tabuleiro Transportes</td>
+                        <td>Cimento</td>
+                        <td>Araras</td>
+                        <td>Sao Paulo</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <center>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Detalhes
+                                </button>
+                            </center>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                Transportes</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" style="color: black">
+                                            <center>
+                                                <p>Empresa: Tabuleiro Transportes</p>
+                                                <p>Carga: Cimento</p>
+                                                <p>Destino: São Paulo</p>
+                                                <p>Local da Carga: Araras</p>
+                                            </center>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-primary">Aplicar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <tr>
+                            <td>1</td>
+                            <td>Tabuleiro Transportes</td>
+                            <td>Cimento</td>
+                            <td>Araras</td>
+                            <td>Sao Paulo</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <center>
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Detalhes
+                                    </button>
+                                </center>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                    Transportes</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" style="color: black">
+                                                <center>
+                                                    <p>Empresa: Tabuleiro Transportes</p>
+                                                    <p>Carga: Cimento</p>
+                                                    <p>Destino: São Paulo</p>
+                                                    <p>Local da Carga: Araras</p>
+                                                </center>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn btn-primary">Aplicar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <tr>
+                                <td>1</td>
+                                <td>Tabuleiro Transportes</td>
+                                <td>Cimento</td>
+                                <td>Araras</td>
+                                <td>Sao Paulo</td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <center>
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Detalhes
+                                        </button>
+                                    </center>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                        Transportes</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="color: black">
+                                                    <center>
+                                                        <p>Empresa: Tabuleiro Transportes</p>
+                                                        <p>Carga: Cimento</p>
+                                                        <p>Destino: São Paulo</p>
+                                                        <p>Local da Carga: Araras</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Fechar</button>
+                                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tabuleiro Transportes</td>
+                                    <td>Cimento</td>
+                                    <td>Araras</td>
+                                    <td>Sao Paulo</td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <center>
+                                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                Detalhes
+                                            </button>
+                                        </center>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                            Transportes</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" style="color: black">
+                                                        <center>
+                                                            <p>Empresa: Tabuleiro Transportes</p>
+                                                            <p>Carga: Cimento</p>
+                                                            <p>Destino: São Paulo</p>
+                                                            <p>Local da Carga: Araras</p>
+                                                        </center>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Tabuleiro Transportes</td>
+                                        <td>Cimento</td>
+                                        <td>Araras</td>
+                                        <td>Sao Paulo</td>
+                                        <td>
+                                            <!-- Button trigger modal -->
+                                            <center>
+                                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    Detalhes
+                                                </button>
+                                            </center>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                Transportes</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body" style="color: black">
+                                                            <center>
+                                                                <p>Empresa: Tabuleiro Transportes</p>
+                                                                <p>Carga: Cimento</p>
+                                                                <p>Destino: São Paulo</p>
+                                                                <p>Local da Carga: Araras</p>
+                                                            </center>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Fechar</button>
+                                                            <button type="button" class="btn btn-primary">Aplicar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tabuleiro Transportes</td>
+                                            <td>Cimento</td>
+                                            <td>Araras</td>
+                                            <td>Sao Paulo</td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <center>
+                                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                        Detalhes
+                                                    </button>
+                                                </center>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                    Transportes</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body" style="color: black">
+                                                                <center>
+                                                                    <p>Empresa: Tabuleiro Transportes</p>
+                                                                    <p>Carga: Cimento</p>
+                                                                    <p>Destino: São Paulo</p>
+                                                                    <p>Local da Carga: Araras</p>
+                                                                </center>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Fechar</button>
+                                                                <button type="button" class="btn btn-primary">Aplicar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Tabuleiro Transportes</td>
+                                                <td>Cimento</td>
+                                                <td>Araras</td>
+                                                <td>Sao Paulo</td>
+                                                <td>
+                                                    <!-- Button trigger modal -->
+                                                    <center>
+                                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleModal">
+                                                            Detalhes
+                                                        </button>
+                                                    </center>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                        Transportes</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body" style="color: black">
+                                                                    <center>
+                                                                        <p>Empresa: Tabuleiro Transportes</p>
+                                                                        <p>Carga: Cimento</p>
+                                                                        <p>Destino: São Paulo</p>
+                                                                        <p>Local da Carga: Araras</p>
+                                                                    </center>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Fechar</button>
+                                                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tabuleiro Transportes</td>
+                                                    <td>Cimento</td>
+                                                    <td>Araras</td>
+                                                    <td>Sao Paulo</td>
+                                                    <td>
+                                                        <!-- Button trigger modal -->
+                                                        <center>
+                                                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                data-bs-target="#exampleModal">
+                                                                Detalhes
+                                                            </button>
+                                                        </center>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                            Transportes</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body" style="color: black">
+                                                                        <center>
+                                                                            <p>Empresa: Tabuleiro Transportes</p>
+                                                                            <p>Carga: Cimento</p>
+                                                                            <p>Destino: São Paulo</p>
+                                                                            <p>Local da Carga: Araras</p>
+                                                                        </center>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">Fechar</button>
+                                                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Tabuleiro Transportes</td>
+                                                        <td>Cimento</td>
+                                                        <td>Araras</td>
+                                                        <td>Sao Paulo</td>
+                                                        <td>
+                                                            <!-- Button trigger modal -->
+                                                            <center>
+                                                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    Detalhes
+                                                                </button>
+                                                            </center>
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                                Transportes</h5>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body" style="color: black">
+                                                                            <center>
+                                                                                <p>Empresa: Tabuleiro Transportes</p>
+                                                                                <p>Carga: Cimento</p>
+                                                                                <p>Destino: São Paulo</p>
+                                                                                <p>Local da Carga: Araras</p>
+                                                                            </center>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary"
+                                                                                data-bs-dismiss="modal">Fechar</button>
+                                                                            <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Tabuleiro Transportes</td>
+                                                            <td>Cimento</td>
+                                                            <td>Araras</td>
+                                                            <td>Sao Paulo</td>
+                                                            <td>
+                                                                <!-- Button trigger modal -->
+                                                                <center>
+                                                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">
+                                                                        Detalhes
+                                                                    </button>
+                                                                </center>
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                    aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                                    Transportes</h5>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                    aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body" style="color: black">
+                                                                                <center>
+                                                                                    <p>Empresa: Tabuleiro Transportes</p>
+                                                                                    <p>Carga: Cimento</p>
+                                                                                    <p>Destino: São Paulo</p>
+                                                                                    <p>Local da Carga: Araras</p>
+                                                                                </center>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary"
+                                                                                    data-bs-dismiss="modal">Fechar</button>
+                                                                                <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Tabuleiro Transportes</td>
+                                                                <td>Cimento</td>
+                                                                <td>Araras</td>
+                                                                <td>Sao Paulo</td>
+                                                                <td>
+                                                                    <!-- Button trigger modal -->
+                                                                    <center>
+                                                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                            data-bs-target="#exampleModal">
+                                                                            Detalhes
+                                                                        </button>
+                                                                    </center>
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                        aria-hidden="true">
+                                                                        <div class="modal-dialog">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                                        Transportes</h5>
+                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                        aria-label="Close"></button>
+                                                                                </div>
+                                                                                <div class="modal-body" style="color: black">
+                                                                                    <center>
+                                                                                        <p>Empresa: Tabuleiro Transportes</p>
+                                                                                        <p>Carga: Cimento</p>
+                                                                                        <p>Destino: São Paulo</p>
+                                                                                        <p>Local da Carga: Araras</p>
+                                                                                    </center>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-secondary"
+                                                                                        data-bs-dismiss="modal">Fechar</button>
+                                                                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Tabuleiro Transportes</td>
+                                                                    <td>Cimento</td>
+                                                                    <td>Araras</td>
+                                                                    <td>Sao Paulo</td>
+                                                                    <td>
+                                                                        <!-- Button trigger modal -->
+                                                                        <center>
+                                                                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">
+                                                                                Detalhes
+                                                                            </button>
+                                                                        </center>
+                                                                        <!-- Modal -->
+                                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                            aria-hidden="true">
+                                                                            <div class="modal-dialog">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                                            Transportes</h5>
+                                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                            aria-label="Close"></button>
+                                                                                    </div>
+                                                                                    <div class="modal-body" style="color: black">
+                                                                                        <center>
+                                                                                            <p>Empresa: Tabuleiro Transportes</p>
+                                                                                            <p>Carga: Cimento</p>
+                                                                                            <p>Destino: São Paulo</p>
+                                                                                            <p>Local da Carga: Araras</p>
+                                                                                        </center>
+                                                                                    </div>
+                                                                                    <div class="modal-footer">
+                                                                                        <button type="button" class="btn btn-secondary"
+                                                                                            data-bs-dismiss="modal">Fechar</button>
+                                                                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>Tabuleiro Transportes</td>
+                                                                        <td>Cimento</td>
+                                                                        <td>Araras</td>
+                                                                        <td>Sao Paulo</td>
+                                                                        <td>
+                                                                            <!-- Button trigger modal -->
+                                                                            <center>
+                                                                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                                    data-bs-target="#exampleModal">
+                                                                                    Detalhes
+                                                                                </button>
+                                                                            </center>
+                                                                            <!-- Modal -->
+                                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                                aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <div class="modal-header">
+                                                                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                                                Transportes</h5>
+                                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                                aria-label="Close"></button>
+                                                                                        </div>
+                                                                                        <div class="modal-body" style="color: black">
+                                                                                            <center>
+                                                                                                <p>Empresa: Tabuleiro Transportes</p>
+                                                                                                <p>Carga: Cimento</p>
+                                                                                                <p>Destino: São Paulo</p>
+                                                                                                <p>Local da Carga: Araras</p>
+                                                                                            </center>
+                                                                                        </div>
+                                                                                        <div class="modal-footer">
+                                                                                            <button type="button" class="btn btn-secondary"
+                                                                                                data-bs-dismiss="modal">Fechar</button>
+                                                                                            <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>Tabuleiro Transportes</td>
+                                                                            <td>Cimento</td>
+                                                                            <td>Araras</td>
+                                                                            <td>Sao Paulo</td>
+                                                                            <td>
+                                                                                <!-- Button trigger modal -->
+                                                                                <center>
+                                                                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                                                        data-bs-target="#exampleModal">
+                                                                                        Detalhes
+                                                                                    </button>
+                                                                                </center>
+                                                                                <!-- Modal -->
+                                                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                                    aria-hidden="true">
+                                                                                    <div class="modal-dialog">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                                                                    Transportes</h5>
+                                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                                    aria-label="Close"></button>
+                                                                                            </div>
+                                                                                            <div class="modal-body" style="color: black">
+                                                                                                <center>
+                                                                                                    <p>Empresa: Tabuleiro Transportes</p>
+                                                                                                    <p>Carga: Cimento</p>
+                                                                                                    <p>Destino: São Paulo</p>
+                                                                                                    <p>Local da Carga: Araras</p>
+                                                                                                </center>
+                                                                                            </div>
+                                                                                            <div class="modal-footer">
+                                                                                                <button type="button" class="btn btn-secondary"
+                                                                                                    data-bs-dismiss="modal">Fechar</button>
+                                                                                                <button type="button" class="btn btn-primary">Aplicar</button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            v
+                                                                            <tr>
+                <td>1</td>
+                <td>Tabuleiro Transportes</td>
+                <td>Cimento</td>
+                <td>Araras</td>
+                <td>Sao Paulo</td>
+                <td>
+                    <!-- Button trigger modal -->
+                    <center>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Detalhes
+                        </button>
+                    </center>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                        Transportes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color: black">
+                                    <center>
+                                        <p>Empresa: Tabuleiro Transportes</p>
+                                        <p>Carga: Cimento</p>
+                                        <p>Destino: São Paulo</p>
+                                        <p>Local da Carga: Araras</p>
+                                    </center>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td><tr>
+                    <td>1</td>
+                    <td>Tabuleiro Transportes</td>
+                    <td>Cimento</td>
+                    <td>Araras</td>
+                    <td>Sao Paulo</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <center>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Detalhes
+                            </button>
+                        </center>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                            Transportes</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="color: black">
+                                        <center>
+                                            <p>Empresa: Tabuleiro Transportes</p>
+                                            <p>Carga: Cimento</p>
+                                            <p>Destino: São Paulo</p>
+                                            <p>Local da Carga: Araras</p>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <tr>
+                        <td>1</td>
+                        <td>Tabuleiro Transportes</td>
+                        <td>Cimento</td>
+                        <td>Araras</td>
+                        <td>Sao Paulo</td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <center>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Detalhes
+                                </button>
+                            </center>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                Transportes</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" style="color: black">
+                                            <center>
+                                                <p>Empresa: Tabuleiro Transportes</p>
+                                                <p>Carga: Cimento</p>
+                                                <p>Destino: São Paulo</p>
+                                                <p>Local da Carga: Araras</p>
+                                            </center>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-primary">Aplicar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <tr>
+                            <td>1</td>
+                            <td>Tabuleiro Transportes</td>
+                            <td>Cimento</td>
+                            <td>Araras</td>
+                            <td>Sao Paulo</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <center>
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Detalhes
+                                    </button>
+                                </center>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                    Transportes</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" style="color: black">
+                                                <center>
+                                                    <p>Empresa: Tabuleiro Transportes</p>
+                                                    <p>Carga: Cimento</p>
+                                                    <p>Destino: São Paulo</p>
+                                                    <p>Local da Carga: Araras</p>
+                                                </center>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn btn-primary">Aplicar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <tr>
+                                <td>1</td>
+                                <td>Tabuleiro Transportes</td>
+                                <td>Cimento</td>
+                                <td>Araras</td>
+                                <td>Sao Paulo</td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <center>
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Detalhes
+                                        </button>
+                                    </center>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                        Transportes</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="color: black">
+                                                    <center>
+                                                        <p>Empresa: Tabuleiro Transportes</p>
+                                                        <p>Carga: Cimento</p>
+                                                        <p>Destino: São Paulo</p>
+                                                        <p>Local da Carga: Araras</p>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Fechar</button>
+                                                    <button type="button" class="btn btn-primary">Aplicar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tabuleiro Transportes</td>
+                                    <td>Cimento</td>
+                                    <td>Araras</td>
+                                    <td>Sao Paulo</td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <center>
+                                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                Detalhes
+                                            </button>
+                                        </center>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Tabuleiro
+                                                            Transportes</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" style="color: black">
+                                                        <center>
+                                                            <p>Empresa: Tabuleiro Transportes</p>
+                                                            <p>Carga: Cimento</p>
+                                                            <p>Destino: São Paulo</p>
+                                                            <p>Local da Carga: Araras</p>
+                                                        </center>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="button" class="btn btn-primary">Aplicar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+        </tbody>
+    </table>
+
+
+<footer>
+  <p style="text-align: right;">Direitos reservados</p>
+</footer>
+</body>
+
+</html>
